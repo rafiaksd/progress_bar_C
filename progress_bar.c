@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
+#include <unistd.h> //#inclue <windows.h> for WINDOWS
 #include <time.h>
 
 const int BAR_LENGTH = 50;
@@ -69,7 +69,7 @@ int main() {
 			print_bar(tasks[i]);
 		}
 		
-		sleep(1);
+		sleep(1); //use Sleep(1) for Windows
 	}
 	
 	printf("\nAll tasks completed!\n");

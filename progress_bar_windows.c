@@ -53,7 +53,7 @@ int main() {
     for (int i = 0; i < MAX_TASKS; i++) {
         tasks[i].id = i + 1;
         tasks[i].progress = 0;
-        tasks[i].step = rand() % RANGE + MIN_FOR_RANGE; // Random step between 2 and 21
+        tasks[i].step = rand() % RANGE + MIN_FOR_RANGE; // Random step between 3 and 10, range: 7, min: 3
     }
 
     int tasks_incomplete = 1;
